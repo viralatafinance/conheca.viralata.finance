@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conheça a Vira-Lata Finance ($REAU)</title>
 
+    <link rel="shortcut icon" href="favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
@@ -17,6 +19,35 @@
             --green01: #28b898;
             --green02: #35f0c6;
             --green03: #E2FFF1;
+        }
+
+        #special_anchor {
+            position: fixed;
+            top: 2rem;
+            left: 0;
+            right: 0;
+            width: clamp(16rem, 40rem, 85%);
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(255,0,0,0.9);
+            cursor: var(--green03);
+            padding: 0.9rem 0;
+            color: var(--green03);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: clamp(1.3rem, 1.5vw, 1.1rem);
+            letter-spacing: 1px;
+            z-index: 1000;
+            cursor: pointer;
+            transition: background-color 0.15s ease, transform 0.1s ease;
+            transform: scale(1);
+            border: 0.2rem solid white;
+            box-sizing: border-box;
+        } #special_anchor:hover {
+            background-color: rgba(255,0,0,1);
+            transform:scale(1.03);
+        } #special_anchor:visited {
+            color:var(--white01);
         }
 
         html {
@@ -47,7 +78,7 @@
             margin:0 auto;
         } p {
             font-size: clamp(1.1rem, 1.5vw, 1.2rem);
-            line-height: clamp(1.5rem, 2vw, 1.8rem);
+            line-height: clamp(1.5rem, 3vw, 1.8rem);
             margin: 1rem 0;
             color:var(--white01);
             text-align: justify;
@@ -56,7 +87,7 @@
         } h1 {
             font-size: clamp(2rem, 2.4vw, 2rem);
             color: var(--green02);
-            font-weight: 900;
+            font-weight: 700;
             text-transform: uppercase;
             position: relative;
             display: inline;
@@ -74,7 +105,7 @@
 
         .logo {
             width: 100%;
-            margin: clamp(4rem, 20vw, 10vw) auto clamp(3rem, 20vw, 4rem) auto;
+            margin: clamp(7rem, 20vw, 10vw) auto clamp(3rem, 20vw, 4rem) auto;
             display: block;
         }
         .anchor {
@@ -119,9 +150,12 @@
 </head>
 <body>
 
+
     <div id="progresso"></div>
 
     <main>
+
+        <a id="special_anchor" href="https://docs.google.com/forms/d/e/1FAIpQLSeZVLMNaU7xuFpb9zLKVqkY22ziJry2sXxUOr1GfT5APx6EiQ/viewform?usp=sf_link" target="_blank">Concurso NFT no ar!</a>
 
         <a href="https://viralata.finance/" title="viralata.finance" target="_blank">
             <img class="logo" src="logo.png" alt="">
