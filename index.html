@@ -4,196 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça a Vira-Lata Finance ($REAU)</title>
+    <title>Precisamos falar sobre o REAU.</title>
 
     <link rel="shortcut icon" href="favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-    <style>
-
-        :root {
-            --black01: #191919;
-            --white01: #f8f8ff;
-            --green01: #28b898;
-            --green02: #35f0c6;
-            --green03: #E2FFF1;
-        }
-
-        #special_anchor {
-            position: fixed;
-            top: 2rem;
-            left: 0;
-            right: 0;
-            width: clamp(16rem, 40rem, 85%);
-            margin: 0 auto;
-            text-align: center;
-            background-color: rgba(255,0,0,0.9);
-            cursor: var(--green03);
-            padding: 0.9rem 0;
-            color: var(--green03);
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: clamp(1.3rem, 1.5vw, 1.1rem);
-            letter-spacing: 1px;
-            z-index: 1000;
-            cursor: pointer;
-            transition: background-color 0.15s ease, transform 0.1s ease;
-            transform: scale(1);
-            border: 0.2rem solid white;
-            box-sizing: border-box;
-        } #special_anchor:hover {
-            background-color: rgba(255,0,0,1);
-            transform:scale(1.03);
-        } #special_anchor:visited {
-            color:var(--white01);
-        }
-
-        html {
-            font-size:16px;
-            font-family: 'Roboto', sans-serif;
-            scroll-behavior: smooth;
-        } html, body {
-            margin:0;
-        } body {
-            background-color: var(--black01  );
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-
-        img:not(.logo), video {
-            width:100%;
-            display: block;
-            margin: 2rem 0;
-            object-fit: contain;
-            box-shadow: 0 0 1.5rem -1rem #191919;
-        }
-        
-        main {
-            width: clamp(16rem, 40rem, 85%);
-            margin:0 auto;
-        } p {
-            font-size: clamp(1.1rem, 1.5vw, 1.2rem);
-            line-height: clamp(1.5rem, 3vw, 1.8rem);
-            margin: 1rem 0;
-            color:var(--white01);
-            text-align: justify;
-        } b {
-            font-weight: 600;
-        } h1 {
-            font-size: clamp(2rem, 2.4vw, 2rem);
-            color: var(--green02);
-            font-weight: 700;
-            text-transform: uppercase;
-            position: relative;
-            display: inline;
-        } h1::before {
-            content: '';
-            position: absolute;
-            bottom: 1rem;
-            left: -1rem;
-            right: 2rem;
-            top: 0rem;
-            z-index: -1;
-            background: var(--green02);
-            opacity: 0.15;
-        }
-
-        .logo {
-            width: 100%;
-            margin: clamp(7rem, 20vw, 10vw) auto clamp(3rem, 20vw, 4rem) auto;
-            display: block;
-        }
-        .anchor {
-            width: 100%;
-            padding: 0.6rem 1rem;
-            text-align: center;
-            margin: 1.6rem auto;
-            display: block;
-            background-color: rgb(53 240 198 / 20%);
-            font-size: clamp(1.1rem, 1.5vw, 1.1rem);
-            color: var(--green02);
-            font-weight: 600;
-            box-sizing: border-box;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: background-color 0.15s ease, transform 0.1s ease;
-            transform: scale(1);
-        } .anchor:hover {
-            background-color: rgb(53 240 198 / 38%);
-            transform:scale(1.03);
-        }
-
-        #progresso {
-            position:fixed;
-            top:0;
-            left:0;
-            height: 0.5rem;
-            background-color: var(--green02);
-            z-index: 999;
-        } .pre_h1 {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.9rem;
-            text-align: center;
-            color: var(--white01);
-            margin: 5rem 0;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body id="body">
+    
+  <div id="particle-canvas"></div>
 
     <div id="progresso"></div>
 
-    <main>
-
-        <a id="special_anchor" href="https://docs.google.com/forms/d/e/1FAIpQLSeZVLMNaU7xuFpb9zLKVqkY22ziJry2sXxUOr1GfT5APx6EiQ/viewform?usp=sf_link" target="_blank">Concurso NFT no ar!</a>
-
-        <a href="https://viralata.finance/" title="viralata.finance" target="_blank">
-            <img class="logo" src="logo.png" alt="">
+    <div id="all_height">
+        <a id="logo_a" href="https://docs.viralata.finance/" title="viralata.finance" target="_blank">
+            <img src="logo.png" alt="">
         </a>
-
-
-        <h1>💰 Você sabe o que são criptomoedas?</h1>
     
-        <p>Criptomoedas são <b>ativos financeiros que não possuem dono e regulam-se apenas pelos seus próprios investidores.</b> O Bitcoin, que todo mundo já conhece, é responsável pelas histórias de pessoas que enriqueceram com investimentos minúsculos. Isso abriu portas para um novo tipo de especulação financeira e para um mercado diverso de moedas com <b>diferentes propósitos.</b></p>
-    
-        <p>As criptomoedas são o investimento mais promissor da atualidade, e muitos analistas consideram as finanças descentralizadas o <b>futuro da economia mundial. 🌎</b></p>
-        
-        <p class="pre_h1">Enquanto em alguns países é possível pagar até o cafézinho em cripto ☕, a sociedade brasileira ainda está muito alheia à segurança, tecnologia e às vantagens que envolvem ativos digitais. <b>Isso precisa ser visto como uma grande oportunidade!</b> Existem milhares - ou até milhões - de brasileiros que podem ser apresentados ao universo cripto. E tem mais!</p>
+        <h1>VOCÊ CONHECE A<br/><span>VIRALATA FINANCE?</span></h1>
 
-        <h1>🐕 O Nosso Vira-Lata</h1>
+        <a id="indicador" href="#indicador"></a>
+    </div>
+
+    <main>
+        <p class="pre_h2">Viralata Finance é o projeto financeiro de cunho social que vai fazer a diferença para milhões de pessoas e animais de rua com finanças descentralizadas (criptomoedas) e ações sociais coletivas. Através da educação financeira criptográfica e das ações sociais, estamos nos tornando o <b>primeiro ecossistema financeiro descentralizado do Brasil</b>. Somos mais de vinte mil integrantes da comunidade no país, contamos com mais de sessenta mil investidores ao redor do mundo e <b>em menos de seis meses arrecadamos mais de R$400.000,00</b> para doações que ocorreram anteriormente e que ainda ocorrerão.</p>
+
+        <h2>💰 O que são criptomoedas?</h2>
+
+        <p>Criptomoedas são <b>ativos financeiros que não possuem dono e seu valor pode ser definido apenas por seus investidores.</b> O Bitcoin, que todo mundo já conhece, é responsável pelas histórias de pessoas que enriqueceram com investimentos minúsculos. Isso abriu portas para um novo tipo de investimento e para um grande mercado de moedas com <b>diferentes propósitos.</b></p>
+
+        <p>As criptomoedas são o investimento mais promissor da atualidade, e muitos analistas consideram as finanças descentralizadas o <b>futuro da economia mundial. 🌎</b> Essa descentralização permite que qualquer um utilize essa tecnologia para investir ou guardar dinheiro de forma segura sem intermediários - como os bancos. <b>As criptomoedas tornam você o seu próprio banco!</b> 🏦</p>
+
+        <p class="pre_h2">Enquanto em alguns países é possível pagar até o cafézinho em cripto ☕, a sociedade brasileira ainda está muito alheia à segurança, tecnologia e às vantagens que envolvem ativos digitais. <b>Isso precisa ser visto como uma grande oportunidade!</b> Existem milhares - ou até milhões - de brasileiros que podem ser apresentados ao universo cripto. E tem mais!</p>
+
+        <h2>🐕 Nosso Vira-Lata</h2>
     
-        <p>A REAU é um <b>criptoativo de cunho social</b> que, através do humor e da educação busca <b>introduzir milhões de brasileiros ao mundo dos investimentos e nutrir neles a consciência pelo ato da doação.</b> O projeto surgiu como protesto à ausência do vira-lata caramelo nas notas de R$200, e se escreve "REAU" pois "AU" é uma homenagem ao som dos cães! 🐶</p>
+        <p>REAU é um <b>criptoativo de cunho social</b> que, através do humor e da educação busca <b>introduzir milhões de brasileiros ao mundo dos investimentos e nutrir neles a consciência pelo ato da doação.</b> O projeto surgiu como <b>protesto à ausência do vira-lata caramelo nas notas de R$200</b>, e se escreve "REAU" pois "AU" é uma homenagem ao som dos cães! 🐶</p>
     
         <a class="anchor" href="https://viralata.finance/" target="_blank">Visite o site oficial</a>
     
-        <p>Com o "protagonismo" do vira-lata, temos nos movimentado para dar suporte financeiro a diversas ONGs e abrigos de animais abandonados pelo país. Toda semana realizamos a Hora da Ração, quando os investidores se unem para doar por PIX ou transferência cripto. <b>Em menos de dois meses de projeto, alcançamos mais de R$100 mil em doações individuais da comunidade! ❤️</b></p>
+        <a class="anchor" href="https://t.me/viralatafinance" target="_blank">Grupo do Telegram</a>
+    
+        <p>Com o "protagonismo" do vira-lata, temos nos movimentado para dar suporte financeiro a diversas ONGs e abrigos de animais abandonados pelo país. Já realizamos ações semanais e mensais de arrecadação comunitária através de PIX ou transferência de criptoativo.<b> Atualmente buscamos parceria com ONGs e abrigos animais para organizar eventos maiores e dar a eles uma oportunidade de renda pelo apoio ao projeto! ❤️</b></p>
+    
+        <a class="anchor" href="https://forms.gle/W5fbkEjWZmwMYQsw5" target="_blank">Formulário de Parceria (ONgs e abrigos)</a>
 
         <img src="new_01.jpg">
         <a class="anchor" href="https://cointelegraph.com.br/news/after-rising-56-000-brazilian-cryptocurrency-leads-donations-to-help-abandoned-animals-in-the-amazon?utm_source=Telegram&utm_medium=social" target="_blank">Veja a matéria acima</a>
     
         <p><b>O projeto é jovem e muitas coisas legais estão sendo construídas!</b> 🛠️ Buscamos parcerias que tragam visibilidade ao projeto e, por consequência, estimulem pessoas ao redor do mundo a praticar caridade com alguma frequência. Já existem planos para realizarmos uma Hora da Ração internacional, em parceria com outros projetos.</p>
     
-        <p><b>A REAU é um projeto sem donos e sem CNPJ, gerido apenas por seus próprios investidores voluntários. ✊</b> Nossa maior busca, atualmente, é por influencers que entendam e abracem as causas da comunidade. Por isso, é sempre um prazer imenso apoiar e ser apoiado por quem está disposto a fazer o bem.</p>
+        <p><b>REAU é um projeto sem donos e sem CNPJ, gerido apenas por seus próprios investidores voluntários. ✊</b> Nossa maior busca, atualmente, é por influencers que entendam e abracem as causas da comunidade. Por isso, é sempre um prazer imenso apoiar e ser apoiado por quem está disposto a fazer o bem.</p>
 
         <p><b>Confira o relato de um abrigo prestes a participar da Hora da Ração em 03/06/2021:</b></p>
 
         <video controls>
             <source src="sos_bichos.mp4" type="video/mp4">
         </video>
-        <a class="anchor pre_h1" href="https://cointelegraph.com.br/news/after-rising-56-000-brazilian-cryptocurrency-leads-donations-to-help-abandoned-animals-in-the-amazon?utm_source=Telegram&utm_medium=social" target="_blank">Confira o post do Instagram</a>
+        <a class="anchor pre_h2" href="https://www.instagram.com/tv/CPoy_82Hh-3/?utm_source=ig_web_copy_link" target="_blank">Confira o post do Instagram</a>
+        
+        <h2>Os Pilares do Vira-lata</h2>
 
+        <p>🐶 Nascido como uma brincadeira de bom gosto, o empenho de uma comunidade fez com que o REAU também nascesse como um projeto. A coletividade que o construiu é a mesma que o torna o token tão forte e resistente. <b>Entre altas e baixas do mercado, o que o projeto busca atualmente? Onde queremos chegar?</b></p>
 
-        <h1>📰 Onde o REAU já apareceu</h1>
+        <p><b>📖 Educação e introdução do público brasileiro às finanças descentralizadas</b></p>
+
+        <ul><li><p>Milhares de brasileiros tiveram seu primeiro contato com criptoativos através do REAU. Não é uma surpresa que existe um grande déficit de educação financeira e cripto no Brasil. <b>Enxergamos nisso uma grande oportunidade!</b> O brasil é um terreno muito fértil para cultivar investidores e apresentar a eles o universo das criptomoedas. <b>Que o REAU seja a porta de entrada para muitos</b>, através de um grupo receptivo e de conteúdo educacional público e de qualidade.</p></li></ul>
+
+        <p><b>🏦 Alternativa ao modelo financeiro tradicional</b></p>
+
+        <ul><li><p><b>O desafio mais legal para a Viralata é se estabelecer como um ecossistema financeiro de utilidade prática.</b> Neste sentido, existe um time desenvolvendo soluções para comerciantes parceiros do vira-lata, além de compras e transferências mais simples para o público iniciante.<br/><br/>Uma das soluções que estamos prestes a entregar é o <b>REAUPay</b>, uma carteira baseada em Metamask que fornecerá benefícios exclusivos aos investidores da REAU, junto a outras novidades enormes que estão por vir.<br/><br/>Se quiser saber mais sobre o <b>REAUPay</b>, confira a entrevista com um de seus desenvolvedores <a href="https://youtu.be/0n82WHpy1L8" target="_blank">clicando aqui!</a><br/><br/>Atualmente também contamos com o <b>criptoativo AURO</b>, que já pode ser aceito em qualquer comércio! Basta ter uma carteira cripto e utilizar seu QR code como endereço de pagamento. <b>Também é possível utilizar AURO para obter rendimentos passivos em nossa plataforma!</b> <a href="https://docs.viralata.finance/tokenomics/auro" target="_blank">Saiba mais sobre AURO</a></p></li></ul>
+
+        <p><b>🐶 Suporte financeiro a ONGs e abrigos animais</b></p>
+
+        <ul><li><p>A face social do projeto é a mesma de seu símbolo - um <b>cão de rua</b>. Em menos de seis meses, a comunidade REAU conseguiu um montante de <b>mais de R$400.000,00 em doações</b>, através de arrecadação por PIX, transferências cripto e repasses de nosso fundo de caridade, onde os investidores contribuem por <b>recompensas em NFT</b> (artes criptografadas). Realizamos também a <b>Hora da Ração</b> - o momento em que o coletivo se mobiliza para apoiar uma instituição escolhida.</p></li></ul>
+        
+        <p class="pre_h2">A Viralata Finance é a prova daquilo que voluntários e uma comunidade engajada podem alcançar juntos. <b>Para quem vive e acompanha o projeto, esse é só o começo.</b> 😉</p>
+
+        <h2>📰 Onde já aparecemos</h2>
         
         <a class="anchor" href="https://www.cnnbrasil.com.br/business/2021/03/29/icone-brasileiro-vira-lata-caramelo-vira-simbolo-de-criptomoeda-nacional" target="_blank">CNN | Ícone brasileiro, vira-lata caramelo vira símbolo de criptomoeda nacional</a>
 
@@ -203,10 +94,10 @@
         
         <a class="anchor" href="https://cointelegraph.com.br/news/caramel-mongrel-is-transformed-into-a-cryptocurrency-that-has-already-risen-56-305-and-moved-r-18-million" target="_blank">Coin Telegraph | Vira-lata caramelo é transformado em criptomoeda que já subiu 56.305% e movimentou R$ 18 milhões</a>
         
-        <a class="anchor pre_h1" href="https://forbes.com.br/forbes-money/2021/04/parece-meme-mas-e-criptomoeda-conheca-os-ativos-mais-inusitados-do-mercado/" target="_blank">Forbes | Parece meme, mas é criptomoeda: conheça os ativos mais inusitados do mercado</a>
+        <a class="anchor pre_h2" href="https://forbes.com.br/forbes-money/2021/04/parece-meme-mas-e-criptomoeda-conheca-os-ativos-mais-inusitados-do-mercado/" target="_blank">Forbes | Parece meme, mas é criptomoeda: conheça os ativos mais inusitados do mercado</a>
     
 
-        <h1>👀 Acompanhe a REAU</h1>
+        <h2>👀 Acompanhe o projeto!</h2>
         
         <a class="anchor" href="https://www.instagram.com/viralatafinance/" target="_blank">Instagram</a>
 
@@ -214,8 +105,12 @@
         
         <a class="anchor" href="https://twitter.com/viralatafinance" target="_blank">Twitter</a>
         
+        <a class="anchor pre_h2" href="https://forum.viralata.finance/" target="_blank">Fórum Vira-Lata</a>
+        
 
-        <h2>A comunidade Vira-Lata agradece!<br/><br/>🐶</h2>
+        <h1>A comunidade<br/>Viralata agradece!<br/>🐶</h1>
+
+        <a href="#body" class="anchor backtop">Voltar para o topo</a>
 
     </main>
 
@@ -227,8 +122,42 @@
         body.onscroll = function(){
             let scrollTotal = body.scrollHeight - innerHeight;
             let proporcao = scrollY / scrollTotal;
-            progresso.style.width = `${Math.floor(proporcao * 100)}%`;
+            progresso.style.width = `${proporcao * 100}%`;
         }
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+        }
+
+    </script>
+
+    <script>
+        // particle.min.js hosted on GitHub
+// Scroll down for initialisation code
+
+!function(a){var b="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global&&global;"function"==typeof define&&define.amd?define(["exports"],function(c){b.ParticleNetwork=a(b,c)}):"object"==typeof module&&module.exports?module.exports=a(b,{}):b.ParticleNetwork=a(b,{})}(function(a,b){var c=function(a){this.canvas=a.canvas,this.g=a.g,this.particleColor=a.options.particleColor,this.x=Math.random()*this.canvas.width,this.y=Math.random()*this.canvas.height,this.velocity={x:(Math.random()-.5)*a.options.velocity,y:(Math.random()-.5)*a.options.velocity}};return c.prototype.update=function(){(this.x>this.canvas.width+20||this.x<-20)&&(this.velocity.x=-this.velocity.x),(this.y>this.canvas.height+20||this.y<-20)&&(this.velocity.y=-this.velocity.y),this.x+=this.velocity.x,this.y+=this.velocity.y},c.prototype.h=function(){this.g.beginPath(),this.g.fillStyle=this.particleColor,this.g.globalAlpha=.7,this.g.arc(this.x,this.y,1.5,0,2*Math.PI),this.g.fill()},b=function(a,b){this.i=a,this.i.size={width:this.i.offsetWidth,height:this.i.offsetHeight},b=void 0!==b?b:{},this.options={particleColor:void 0!==b.particleColor?b.particleColor:"#fff",background:void 0!==b.background?b.background:"#1a252f",interactive:void 0!==b.interactive?b.interactive:!0,velocity:this.setVelocity(b.speed),density:this.j(b.density)},this.init()},b.prototype.init=function(){if(this.k=document.createElement("div"),this.i.appendChild(this.k),this.l(this.k,{position:"absolute",top:0,left:0,bottom:0,right:0,"z-index":1}),/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background))this.l(this.k,{background:this.options.background});else{if(!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background))return console.error("Please specify a valid background image or hexadecimal color"),!1;this.l(this.k,{background:'url("'+this.options.background+'") no-repeat center',"background-size":"cover"})}if(!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor))return console.error("Please specify a valid particleColor hexadecimal color"),!1;this.canvas=document.createElement("canvas"),this.i.appendChild(this.canvas),this.g=this.canvas.getContext("2d"),this.canvas.width=this.i.size.width,this.canvas.height=this.i.size.height,this.l(this.i,{position:"absolute"}),this.l(this.canvas,{"z-index":"20",position:"absolute"}),window.addEventListener("resize",function(){return this.i.offsetWidth===this.i.size.width&&this.i.offsetHeight===this.i.size.height?!1:(this.canvas.width=this.i.size.width=this.i.offsetWidth,this.canvas.height=this.i.size.height=this.i.offsetHeight,clearTimeout(this.m),void(this.m=setTimeout(function(){this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&this.o.push(this.p),requestAnimationFrame(this.update.bind(this))}.bind(this),500)))}.bind(this)),this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&(this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p),this.canvas.addEventListener("mousemove",function(a){this.p.x=a.clientX-this.canvas.offsetLeft,this.p.y=a.clientY-this.canvas.offsetTop}.bind(this)),this.canvas.addEventListener("mouseup",function(a){this.p.velocity={x:(Math.random()-.5)*this.options.velocity,y:(Math.random()-.5)*this.options.velocity},this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p)}.bind(this))),requestAnimationFrame(this.update.bind(this))},b.prototype.update=function(){this.g.clearRect(0,0,this.canvas.width,this.canvas.height),this.g.globalAlpha=1;for(var a=0;a<this.o.length;a++){this.o[a].update(),this.o[a].h();for(var b=this.o.length-1;b>a;b--){var c=Math.sqrt(Math.pow(this.o[a].x-this.o[b].x,2)+Math.pow(this.o[a].y-this.o[b].y,2));c>150||(this.g.beginPath(),this.g.strokeStyle=this.options.particleColor,this.g.globalAlpha=(150-c)/150,this.g.lineWidth=.7,this.g.moveTo(this.o[a].x,this.o[a].y),this.g.lineTo(this.o[b].x,this.o[b].y),this.g.stroke())}}0!==this.options.velocity&&requestAnimationFrame(this.update.bind(this))},b.prototype.setVelocity=function(a){return"fast"===a?1:"slow"===a?.50:"none"===a?0:.66},b.prototype.j=function(a){return"high"===a?1.5e4:"low"===a?2e4:isNaN(parseInt(a,10))?1e4:a},b.prototype.l=function(a,b){for(var c in b)a.style[c]=b[c]},b});
+
+// Initialisation
+
+var canvasDiv = document.getElementById('particle-canvas');
+var options = {
+  particleColor: '#35f0c6',
+  background: '#141619',
+  interactive: false,
+  speed: 'slow',
+  density: 'high'
+};
+var particleCanvas = new ParticleNetwork(canvasDiv, options);
     </script>
 </body>
 </html>
